@@ -1,0 +1,12 @@
+Haar cascade:
+it is a pre-trained Haar cascade classifier model, specially designed to detect Russian license plates in images or videos.
+It is stored in a XML file format for easy loading and use within opencv.
+
+How it works?
+Haar Features:
+The model uses Haar-like features, which are simple rectangualar patterns that capture intensity differences within an image region. These features are efficient for real-time object detection.
+
+Cascade classifier:
+The classifier is organized as a cascade of stages, where each stage consists of a set of Haar features and thresholds.
+An image region only passes to the next stage if it meets the criteria of the current stage.
+This cascade structure allows for fast rejection on non-plate regions, focusing computation on potential candidates.
